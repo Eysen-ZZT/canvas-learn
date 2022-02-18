@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="2d" width="600" height="300">
+      <!-- 低版本兼容处理 -->
+      当前版本浏览器不支持，请先升级浏览器。
+    </canvas>
+    <script>
+      var canvas = document.getElementById("2d");
+      var ctx = canvas.getContext("2d");
+      console.log(ctx);
+      ctx.fillStyle = "#f0f";
+      // 绘制矩形
+      // 四个参数分别为：x轴，y轴，x轴偏移量，y轴偏移量
+      ctx.fillRect(0, 0, 150, 75);
+    </script>
+  </body>
+</html>

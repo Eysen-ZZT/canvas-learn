@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="2d" width="600" height="300">
+      <!-- 低版本兼容处理 -->
+      当前版本浏览器不支持，请先升级浏览器。
+    </canvas>
+    <script>
+      var canvas = document.getElementById("2d");
+      var ctx = canvas.getContext("2d");
+      console.log(ctx);
+      // strokeStyle 一旦设置就会成为接下来的默认画笔，除非再次调用设置为其它的值
+      ctx.strokeStyle = "green";
+      ctx.strokeRect(0, 0, 200, 200);
+      ctx.strokeRect(0, 0, 100, 100);
+      ctx.strokeStyle = "red";
+      ctx.strokeRect(50, 50, 100, 100);
+      ctx.strokeStyle = "#00ff00";
+      ctx.strokeRect(250, 250, 100, 100);
+    </script>
+  </body>
+</html>
