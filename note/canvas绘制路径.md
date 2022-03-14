@@ -68,9 +68,7 @@ void ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y);
 | x    | 结束点的 x 轴坐标       |
 | y    | 结束点的 y 轴坐标       |
 
-> ### 注意
->
-> `bezierCurveTo()` 方法绘制出来的是虚拟路径，需要使用 `stroke()` 实体化
+> **注意**：`bezierCurveTo()` 方法绘制出来的是虚拟路径，需要使用 `stroke()` 实体化
 
 ## fill() 方法
 
