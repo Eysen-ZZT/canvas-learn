@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="canvas-1" width="1300" height="800"></canvas>
+    <script>
+      const c = document.getElementById("canvas-1");
+      const ctx = c.getContext("2d");
+      // 线性渐变
+      // var gradient = ctx.createLinearGradient(0, 0, 1300, 0);
+      // gradient.addColorStop(0, "#C6FFDD");
+      // gradient.addColorStop(0.5, "#FBD786");
+      // gradient.addColorStop(1, "#f7797d");
+      // ctx.fillStyle = gradient;
+      // ctx.fillRect(0, 0, 1300, 800);
+      // 放射渐变
+      var gradient = ctx.createRadialGradient(75, 75, 25, 90, 90, 100);
+      gradient.addColorStop(0, "#C6FFDD");
+      gradient.addColorStop(0.5, "#FBD786");
+      gradient.addColorStop(1, "#f7797d");
+      ctx.fillStyle = gradient;
+      // ctx.fillRect(0, 0, 150, 150);
+      ctx.beginPath();
+      ctx.arc(100, 100, 100, 0, 2 * Math.PI);
+      ctx.fill();
+    </script>
+  </body>
+</html>
