@@ -41,5 +41,5 @@ CanvasPattern ctx.createPattern(image, repetition);
 
 ## 纹理的使用方法
 
-1. 使用 `createPattern()` 方法创建一个创建一个纹理对象
+1. 使用 `createPattern()` 方法创建一个纹理对象
 2. 然后把渐变对象赋值给 `fillStyle` 属性
